@@ -8,10 +8,10 @@ const Intro = () => {
         <Nav />
         <div className="text__container">
           <h2>Frontend Developer.</h2>
-          <p>I Love creating beautiful, user centered websites</p>
+          <p>I Love building beautiful, user centered websites.</p>
         </div>
       </div>
-      <img className="profile" src={profile} alt="" />
+      <img data-aos="fade-in" className="profile" src={profile} alt="" />
     </section>
   );
 };

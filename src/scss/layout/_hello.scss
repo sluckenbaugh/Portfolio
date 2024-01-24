@@ -1,0 +1,58 @@
+@use '../util/' as u;
+
+.hello {
+    width: 35vw;
+    margin: 8rem auto;
+    font-size: 2rem;
+    display: grid;
+    & img {
+        width: 14rem;
+        justify-self: center;
+    }
+    &__p {
+        font-weight: 100;
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+    & article {
+        font-size: 1rem;
+        opacity: 0.70;
+    }
+    & h1 {
+        font-size: 2rem;
+        margin: 0.3rem 0 0.5rem;
+    }
+    & article, h1 {
+        padding-left: 1rem;
+    }
+    @include u.breakpoint(small) {
+        &__p {
+            padding-left: 1rem;
+        }
+        & article, h1 {
+            padding-left: 3rem;
+        }
+    }
+    @include u.breakpoint(medium) {
+        margin-top: 13rem;
+        // max-width: 20rem;
+        & img {
+            width: 23rem;
+        }
+        &__p {
+            font-size: 1.5rem;
+            padding-left: 5rem;
+        }
+        & h1 {
+            font-size: clamp(2.3rem, 2.3rem + 0.8vw, 4rem);
+        }
+        & article {
+            font-size: 1.5rem;
+        }
+        & article, h1 {
+            padding-left: 7rem;
+        }
+    }
+    
+    
+}
