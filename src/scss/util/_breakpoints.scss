@@ -1,0 +1,15 @@
+// 768, 1024, 1440 in pixels
+
+// Sass Map 
+$breakpoints: (
+    "small": 34em,
+    "medium": 48em,
+    "large": 64em,
+    "x-large": 90
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content
+    }
+}
