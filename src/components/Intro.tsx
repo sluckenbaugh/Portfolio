@@ -6,7 +6,7 @@ const Intro = () => {
     <section className="intro">
       <div className="intro__background">
         <Nav />
-        <div className="text__container">
+        <div data-aos="fade-in" className="text__container">
           <h2>Frontend Developer.</h2>
           <p>I Love building beautiful, user centered websites.</p>
         </div>

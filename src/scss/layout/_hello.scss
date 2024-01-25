@@ -2,7 +2,7 @@
 
 .hello {
     width: 35vw;
-    margin: 8rem auto;
+    margin: 8rem auto 7rem;
     font-size: 2rem;
     display: grid;
     & img {
@@ -53,6 +53,7 @@
             padding-left: 7rem;
         }
     }
+    
     
     
 }

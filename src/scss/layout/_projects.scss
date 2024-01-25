@@ -1,0 +1,42 @@
+@use '../util/' as u;
+
+.projects__container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    & h2 {
+        font-size: 2rem;
+    }
+    & p {
+        color: var(--color-primary);
+        transform: translateY(-12px);
+        font-size: 2rem;
+    }
+    & .container {
+        transform: translate(5vw, -13vh);
+    }
+    .circle {
+        border: 2px solid #ff002a;
+        // transform: translate(-2vw, 15vh);
+        left: 24vw;
+        opacity: 0.55;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+    @include u.breakpoint(medium) {
+        & h2 {
+            font-size: clamp(2.3rem, 2.3rem + 0.8vw, 4rem);
+        }
+        & .container {
+            transform: translate(1vw, -13vh);
+        }
+        .circle {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+    
+
+
+}
