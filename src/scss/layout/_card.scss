@@ -1,9 +1,11 @@
+@use '../util/' as u;
+
 .card {
     background: rgb(23,173,255);
-    background: linear-gradient(230deg, rgba(23,173,255,0.7) 0%, rgba(255,255,255,1) 65%);
+    background: linear-gradient(230deg, rgba(23,173,255,0.85) 0%, rgba(255,255,255,1) 33%);
     margin: 2rem;
     position: relative;
-    box-shadow: 3px 3px 5px #c3c3c3;
+    box-shadow: -3px 3px 7px #dfdfdf;
     padding: 3rem 6rem;
     width: min-content;
     border-radius: 0.4rem;
@@ -20,6 +22,7 @@
         text-align: left;
     }
     &__description {
+        font-size: 1.1rem;
         opacity: 0.75;
     }
     & a {
@@ -42,12 +45,68 @@
         padding: 0.3rem 2.5rem;
         width: 10rem;
         margin-top: 2rem;
-        transition: all 300ms;
-        
-        
+        transition: all 300ms; 
     }
     .btn--primary:hover {
         background: var(--color-primary);
         color: #fff;
+    }
+    @include u.breakpoint(medium) {
+        img {
+            width: 22rem;
+        }
+        &__title {
+            font-size: 2.7rem;
+            text-align: left;
+        }
+        &__description {
+            font-size: 1.4rem;
+            opacity: 0.75;
+        }
+        .btn--primary {
+            font-size: 1.8rem;
+        }
+        & a {
+            left: 36.5%;
+        }
+    }
+    @include u.breakpoint(large) {
+        img {
+            width: 28rem;
+        }
+        &__title {
+            font-size: 2.9rem;
+            text-align: left;
+        }
+        .btn--primary {
+            font-size: 2rem;
+        }
+        &__description {
+            font-size: 1.7rem;
+            opacity: 0.75;
+            padding-bottom: 2rem;
+        }
+        & a {
+            left: 36.5%;
+        }
+    }
+    @include u.breakpoint(x-large) {
+        padding: 7rem 6rem;
+        img {
+            width: 40rem;
+        }
+        &__title {
+            font-size: 3.2rem;
+        }
+        &__description {
+            font-size: 2.2rem;
+        }
+        .btn--primary {
+            font-size: 2.5rem;
+        }
+        & a {
+            left: 40%;
+            bottom: 4rem;
+        }
     }
 }

@@ -55,6 +55,9 @@
             padding-left: 7rem;
         }
     }
+    @include u.breakpoint(large) {
+        margin-top: 16rem;
+    }
     
     
     

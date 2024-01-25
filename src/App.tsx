@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Hello from "./components/Hello";
 import Intro from "./components/Intro";
 import ProjectGrid from "./components/ProjectGrid";
@@ -10,6 +11,7 @@ const App = () => {
       <Hello />
       <Projects />
       <ProjectGrid />
+      <Footer />
     </div>
   );
 };

@@ -9,11 +9,14 @@
 }
 
 .grid__projects {
+    margin: 2rem 0 5rem;
     display: grid;
     justify-content: center;
     @include u.breakpoint(medium) {
+        margin: 5rem 0 8rem;
         grid-template-columns: repeat(2, 1fr);
         width: 60vw;
         margin-inline: auto;
     }
+
 }
