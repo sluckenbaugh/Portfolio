@@ -1,7 +1,19 @@
-@use '../util' as u;
+@use '../util/' as u;
 
-.grid {
+.grid__card {
+    margin-top: 6rem;
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1rem;
+    width: 60vw;
+    margin-inline: auto;
+}
+
+.grid__projects {
+    display: grid;
+    justify-content: center;
+    @include u.breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 60vw;
+        margin-inline: auto;
+    }
 }

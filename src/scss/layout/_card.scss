@@ -1,0 +1,53 @@
+.card {
+    background: rgb(23,173,255);
+    background: linear-gradient(230deg, rgba(23,173,255,0.7) 0%, rgba(255,255,255,1) 65%);
+    margin: 2rem;
+    position: relative;
+    box-shadow: 3px 3px 5px #c3c3c3;
+    padding: 3rem 6rem;
+    width: min-content;
+    border-radius: 0.4rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    & img {
+        width: 15rem;
+    }
+    &__title {
+        font-size: 2rem;
+        text-align: left;
+    }
+    &__description {
+        opacity: 0.75;
+    }
+    & a {
+        position: absolute;
+        bottom: 2rem;
+        left: 32.5%;
+    }
+    .box__img {
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        margin: 2rem 0 2rem;
+        border: 1.8px solid var(--color-primary);
+    }
+    .btn--primary {
+        border: 1.6px solid var(--color-primary);
+        background: none;
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        border-radius: 2rem;
+        padding: 0.3rem 2.5rem;
+        width: 10rem;
+        margin-top: 2rem;
+        transition: all 300ms;
+        
+        
+    }
+    .btn--primary:hover {
+        background: var(--color-primary);
+        color: #fff;
+    }
+}

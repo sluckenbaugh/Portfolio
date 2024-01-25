@@ -2,7 +2,7 @@
 
 .hello {
     width: 35vw;
-    margin: 8rem auto 7rem;
+    margin: 8rem auto 6rem;
     font-size: 2rem;
     display: grid;
     & img {
@@ -25,6 +25,7 @@
     & article, h1 {
         padding-left: 1rem;
     }
+    
     @include u.breakpoint(small) {
         &__p {
             padding-left: 1rem;
@@ -35,6 +36,7 @@
     }
     @include u.breakpoint(medium) {
         margin-top: 13rem;
+        margin-bottom: 9rem;
         // max-width: 20rem;
         & img {
             width: 23rem;

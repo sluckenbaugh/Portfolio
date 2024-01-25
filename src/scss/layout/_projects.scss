@@ -2,6 +2,7 @@
 
 .projects__container {
     position: relative;
+    background-image: url('../../static/planets.jpg');
     display: grid;
     justify-content: center;
     & h2 {
@@ -17,9 +18,8 @@
     }
     .circle {
         border: 2px solid #ff002a;
-        // transform: translate(-2vw, 15vh);
         left: 24vw;
-        opacity: 0.55;
+        opacity: 0.75;
         width: 10rem;
         height: 10rem;
         border-radius: 50%;

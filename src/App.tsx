@@ -1,5 +1,6 @@
 import Hello from "./components/Hello";
 import Intro from "./components/Intro";
+import ProjectGrid from "./components/ProjectGrid";
 import Projects from "./components/Projects";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <Intro />
       <Hello />
       <Projects />
+      <ProjectGrid />
     </div>
   );
 };
