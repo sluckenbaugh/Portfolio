@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 import logo from "../static/logo.jpeg";
 
 const Nav = () => {
   return (
     <div className="nav">
-      <img data-aos="flip-right" src={logo} alt="" />
+      <Link to="/">
+        <img data-aos="flip-right" src={logo} alt=""></img>
+      </Link>
       <div className="nav__links">
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <Link to="/about">About</Link>
+        <Link to="/resume">Resume</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
   );
