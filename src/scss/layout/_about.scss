@@ -1,0 +1,65 @@
+@use '../util/' as u;
+
+.about__container {
+    display: grid;
+    justify-content: center;
+}
+.about__content {
+    display: grid;
+    justify-items: center;
+    width: clamp(40vw, 60vw - 4rem, 60vw);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    & article p {
+        margin-bottom: 1rem;
+    }
+    & img {
+        width: 11rem;
+        margin-top: 2rem;
+        border-radius: 0.7rem;
+    }
+    @include u.breakpoint(small) {
+        grid-template-columns: 1fr 40%;
+        gap: 3rem;
+        font-size: 1.2rem;
+        & img {
+            width: 15rem;
+            margin-top: 0;
+        }
+    }
+    @include u.breakpoint(medium) {
+        font-size: 1.4rem;
+        & img {
+            width: 16rem;
+        }
+    }
+    @include u.breakpoint(large) {
+        font-size: 1.6rem;
+        & img {
+            width: 20rem;
+        }
+    }
+    @include u.breakpoint(x-large) {
+        font-size: 1.8rem;
+        & img {
+            width: 23rem;
+        }
+    }
+
+}
+.space__filler {
+    height: 30vh;
+}
+.list__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.list__container ul {
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+
+
+
+

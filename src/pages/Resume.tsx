@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Sidebar from "../components/Sidebar";
 import resume from "../static/resume.png";
 
 const Resume = () => {
@@ -17,6 +18,7 @@ const Resume = () => {
         <div className="line2"></div>
         <img src={resume} alt="" />
       </div>
+      <Sidebar />
       <Footer />
     </>
   );
