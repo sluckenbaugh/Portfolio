@@ -46,6 +46,7 @@
         width: 10rem;
         margin-top: 2rem;
         transition: all 300ms; 
+        cursor: pointer;
     }
     .btn--primary:hover {
         background: var(--color-primary);
@@ -53,7 +54,7 @@
     }
     @include u.breakpoint(medium) {
         img {
-            width: 22rem;
+            width: 17.5rem;
         }
         &__title {
             font-size: 2.7rem;

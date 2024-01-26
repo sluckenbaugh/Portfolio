@@ -1,0 +1,35 @@
+@use "../util/" as u;
+
+.resume {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    img {
+        width: clamp(25rem, 25rem + 15vw, 50rem);
+        border: 1.5px solid #000;
+        border-radius: 2.2rem;
+    }
+    @include u.breakpoint(large) {
+        img {
+            width: clamp(40rem, 40rem + 20vw, 100rem);
+        }
+    }
+
+    
+}
+.line {
+    width: calc(100vw - 5rem);
+    border: 1.5px solid red;
+    position: absolute;
+    margin-top: 17rem;
+    z-index: -1;
+    transform: rotate(5deg);
+}
+.line2 {
+    width: calc(100vw - 8rem);
+    border: 0.5px solid red;
+    position: absolute;
+    margin-top: 21rem;
+    z-index: -1;
+    transform: rotate(-2deg);
+}

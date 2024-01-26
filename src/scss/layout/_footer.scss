@@ -1,51 +1,12 @@
-@use '../util/' as u;
-
 .footer {
-    background: #323232;
-    padding: 2rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    a {
-        color: #fff;
-        font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-evenly;
+    margin: 1rem 0 2rem;
+    & p {
+        font-size: 1.2rem;
+        font-weight: 300;
     }
-    a:hover {
-        text-decoration: underline;
-    }
-    img {
-        width: 6.5rem;
-        border-radius: 50%;
-    }
-    .link__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    @include u.breakpoint(small) {
-        padding: 1.5rem 2rem;
-        .link__list {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 40vw;
-            justify-self: end;
-        }
-    }
-    @include u.breakpoint(medium) {
-        .link__list {
-            width: 28vw;
-        }
-    }
-
-
-}
-.p{
-    width: max-content;
-    margin-inline: auto;
-    padding-bottom: 1rem;
-}
-.copyright {
-    background-color: #323232;
-    color: #fff;
 }

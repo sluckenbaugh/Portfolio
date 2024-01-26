@@ -8,4 +8,13 @@ body {
     font-family: var(--font-roboto);
 }
 
+.heading--center {
+    width: max-content;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+ul {
+    list-style: none;
+}
+
 

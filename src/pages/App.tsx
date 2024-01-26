@@ -3,6 +3,7 @@ import Hello from "../components/Hello";
 import Intro from "../components/Intro";
 import ProjectGrid from "../components/ProjectGrid";
 import Projects from "../components/Projects";
+import Sidebar from "../components/Sidebar";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hello />
       <Projects />
       <ProjectGrid />
+      <Sidebar />
       <Footer />
     </div>
   );

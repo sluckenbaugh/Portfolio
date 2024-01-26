@@ -1,16 +1,16 @@
 @use '../util/' as u;
 
+.heading__underline {
+    color: var(--color-primary);
+    transform: translateY(-12px);
+    font-size: 2rem;
+}
 .projects__container {
     position: relative;
     background-image: url('../../static/planets.jpg');
     display: grid;
     justify-content: center;
     & h2 {
-        font-size: 2rem;
-    }
-    & p {
-        color: var(--color-primary);
-        transform: translateY(-12px);
         font-size: 2rem;
     }
     & .container {

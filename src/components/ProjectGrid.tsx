@@ -10,13 +10,13 @@ const ProjectGrid = () => {
       <ProjectCard
         pic={bobs}
         title="Bob's Burgers Fansite"
-        description="A responsive and interactive website featuring smooth animations. Built with React, Typescript, CSS, the Fetch and Context APIs, and React Router, the site queries the Bob's Burgers REST API and displays the data with crisp UI."
+        description="A responsive and interactive website featuring smooth animations. Built with React, Typescript, CSS, Fetch and Context APIs, and React Router, the site queries the Bob's Burgers REST API and displays the results with crisp UI."
         url="https://bobs-burgers-fansite.vercel.app/"
       />
       <ProjectCard
         pic={game}
         title="GameHub"
-        description="A video game app I built for the Code with Mosh React + Typescript course. This project features skills in React, Typescript, React Router, React Query, Chakra UI, Zustand, and Git. Deployed with Vercel."
+        description="A video game app I built for the Code with Mosh React + Typescript course. This project queries the Rawg gaming API with React Query and employs Chakra UI. The Zustand library is also used for state management.  "
         url="https://game-hub-eta-lime.vercel.app/"
       />
       <ProjectCard
@@ -28,7 +28,7 @@ const ProjectGrid = () => {
       <ProjectCard
         pic={gallery}
         title="The Gallery Wall"
-        description="A responsive website built with HTML5, CSS, and JavaScript."
+        description="A responsive website built with HTML5, CSS, and JavaScript with hamburger menu on mobile."
         url="https://gallery-wall.vercel.app/"
       />
     </div>

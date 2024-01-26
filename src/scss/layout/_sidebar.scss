@@ -1,0 +1,49 @@
+@use '../util/' as u;
+
+
+.sidebar__container {
+
+    .sidebar {
+        display: flex;
+        justify-content: center;
+    }
+    & ul {
+        display: flex;
+        padding: 0;
+    }
+    & img {
+        width: 5rem;
+        transition: transform 250ms;
+    }
+    & img:hover {
+        transform: scale(1.25);
+    }
+
+    @include u.breakpoint(small) {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 10rem;  
+        .sidebar {
+            justify-self: end;
+            display: flex;
+            flex-direction: column;
+            & img {
+                width: 5.2rem;
+            }
+            & ul {
+                margin-top: 0;
+                margin-bottom: 2rem;
+                flex-direction: column;
+            }
+            & li:last-child {
+                border-left: 1.4px solid black;
+                height: 20rem;
+                transform: translate(2.5rem, 0rem);
+            }
+        }
+    }
+}
+
+
+
