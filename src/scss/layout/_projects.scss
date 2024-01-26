@@ -2,8 +2,8 @@
 
 .heading__underline {
     color: var(--color-primary);
-    transform: translateY(-12px);
     font-size: 2rem;
+    line-height: 0;
 }
 .projects__container {
     position: relative;

@@ -15,8 +15,9 @@
     }
     & img {
         width: 11rem;
-        margin-top: 2rem;
         border-radius: 0.7rem;
+        margin-bottom: 2rem;
+        margin-top: -3rem;
     }
     @include u.breakpoint(small) {
         grid-template-columns: 1fr 40%;
@@ -25,6 +26,9 @@
         & img {
             width: 15rem;
             margin-top: 0;
+        }
+        & article {
+            order: -1;
         }
     }
     @include u.breakpoint(medium) {

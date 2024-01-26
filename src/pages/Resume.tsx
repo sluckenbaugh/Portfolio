@@ -10,7 +10,9 @@ const Resume = () => {
         <Nav />
         <div className="heading--center">
           <h2>Resume</h2>
-          <p className="heading__underline">____________________</p>
+          <p data-aos="slide-left" className="heading__underline">
+            ____________________
+          </p>
         </div>
       </div>
       <div data-aos="fade-in" className="resume">

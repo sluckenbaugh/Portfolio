@@ -16,7 +16,7 @@ const ProjectCard = ({ pic, title, description, url }: Props) => {
         <p className="card__description">{description}</p>
       </div>
       <a href={url} target="_blank">
-        <button className="btn--primary">Visit</button>
+        <button className="btn--primary card__btn">Visit</button>
       </a>
     </div>
   );

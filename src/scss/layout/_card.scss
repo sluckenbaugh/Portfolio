@@ -37,22 +37,13 @@
         margin: 2rem 0 2rem;
         border: 1.8px solid var(--color-primary);
     }
-    .btn--primary {
-        border: 1.6px solid var(--color-primary);
-        background: none;
+    .card__btn {
         font-size: 1.5rem;
-        color: var(--color-primary);
-        border-radius: 2rem;
         padding: 0.3rem 2.5rem;
         width: 10rem;
-        margin-top: 2rem;
-        transition: all 300ms; 
-        cursor: pointer;
+        margin-top: 2rem;   
     }
-    .btn--primary:hover {
-        background: var(--color-primary);
-        color: #fff;
-    }
+    
     @include u.breakpoint(medium) {
         img {
             width: 17.5rem;
@@ -65,7 +56,7 @@
             font-size: 1.4rem;
             opacity: 0.75;
         }
-        .btn--primary {
+        .card__btn {
             font-size: 1.8rem;
         }
         & a {
@@ -80,7 +71,7 @@
             font-size: 2.9rem;
             text-align: left;
         }
-        .btn--primary {
+        .card__btn {
             font-size: 2rem;
         }
         &__description {
@@ -103,7 +94,7 @@
         &__description {
             font-size: 2.2rem;
         }
-        .btn--primary {
+        .card__btn {
             font-size: 2.5rem;
         }
         & a {

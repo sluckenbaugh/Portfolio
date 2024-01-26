@@ -1,0 +1,44 @@
+@use '../util/' as u;
+
+.contact__container {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    & h2 {
+        font-size: 2rem;
+    }
+    & img {
+        width: 22rem;
+    }
+    & button {
+        padding: 0.8rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 18vh;
+    }
+    & p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    @include u.breakpoint(small) {
+        & h2 {
+            font-size: clamp(2.2rem, 2.2rem + 0.6vw, 3rem);
+        }
+        & img {
+            width: clamp(25rem, 25rem + 3vw, 40rem);
+        }
+        & button {
+            font-size: 1.7rem;
+        }
+    }
+    @include u.breakpoint(medium) {
+        & button {
+            padding: 1rem;
+            font-size: 2rem;
+            border-radius: 5rem;
+        }
+        & p {
+            font-size: 1.8rem;
+        }
+    }
+}

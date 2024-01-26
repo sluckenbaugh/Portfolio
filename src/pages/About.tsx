@@ -10,11 +10,14 @@ const About = () => {
         <Nav />
         <div className="heading--center">
           <h2>About Me</h2>
-          <p className="heading__underline">____________________</p>
+          <p className="heading__underline" data-aos="slide-right">
+            ____________________
+          </p>
         </div>
       </div>
       <div className="about__container">
         <div className="about__content">
+          <img data-aos="fade-in" src={profile} alt="" />
           <article>
             <p>
               Hello! My name is Shane and I'm a developer, musician, and teacher
@@ -49,7 +52,6 @@ const About = () => {
               Typescript.
             </p>
           </article>
-          <img data-aos="fade-in" src={profile} alt="" />
         </div>
       </div>
       <div className="space__filler"></div>
