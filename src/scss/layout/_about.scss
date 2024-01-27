@@ -5,6 +5,7 @@
     justify-content: center;
 }
 .about__content {
+    // position: relative;
     display: grid;
     justify-items: center;
     width: clamp(40vw, 60vw - 4rem, 60vw);
@@ -19,6 +20,10 @@
         margin-bottom: 2rem;
         margin-top: -3rem;
     }
+    .circle {
+        position: absolute;
+    }
+    
     @include u.breakpoint(small) {
         grid-template-columns: 1fr 40%;
         gap: 3rem;
@@ -30,11 +35,26 @@
         & article {
             order: -1;
         }
+        .circle {
+            position: absolute;
+            border: 2px solid #ff002a;
+            left: 64.5vw;
+            top: 34vh;
+            opacity: 0.75;
+            width: 14rem;
+            height: 14rem;
+            border-radius: 50%;
+            z-index: -5;
+        }
     }
     @include u.breakpoint(medium) {
         font-size: 1.4rem;
         & img {
             width: 16rem;
+        }
+        .circle {
+            width: 16rem;
+            height: 16rem;
         }
     }
     @include u.breakpoint(large) {
@@ -42,11 +62,20 @@
         & img {
             width: 20rem;
         }
+        .circle {
+            width: 20rem;
+            height: 20rem;
+        }
     }
     @include u.breakpoint(x-large) {
         font-size: 1.8rem;
         & img {
             width: 23rem;
+            top: 20vw;
+        }
+        .circle {
+            width: 22rem;
+            height: 22rem;
         }
     }
 

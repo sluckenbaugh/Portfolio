@@ -17,6 +17,7 @@ const About = () => {
       </div>
       <div className="about__container">
         <div className="about__content">
+          <div data-aos="slide-left" className="circle"></div>
           <img data-aos="fade-in" src={profile} alt="" />
           <article>
             <p>
