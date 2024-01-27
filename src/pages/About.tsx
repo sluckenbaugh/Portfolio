@@ -26,9 +26,9 @@ const About = () => {
             </p>
             <p>
               My journey as developer began in 2023 when I took Harvard's CS50
-              online program. while learning languages such as C, Python, and
+              online program. While learning languages such as C, Python, and
               SQL, the course's projects challenged and inspired me. However,
-              When the HTML, CSS, and JavaScript week came, I realized what I
+              when the HTML, CSS, and JavaScript week came, I realized what I
               really wanted to do with my new skills. After completing CS50, I
               dove straight into front-end development and have been building my
               own projects ever since.
