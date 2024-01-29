@@ -18,7 +18,7 @@ const About = () => {
       <div className="about__container">
         <div className="about__content">
           <div data-aos="slide-left" className="circle"></div>
-          <img data-aos="fade-in" src={profile} alt="" />
+          <img data-aos="fade-in" src={profile} alt="profile picture" />
           <article>
             <p>
               Hello! My name is Shane and I'm a developer, musician, and teacher
@@ -32,6 +32,12 @@ const About = () => {
               really wanted to do with my new skills. After completing CS50, I
               dove straight into front-end development and have been building my
               own projects ever since.
+            </p>
+            <p>
+              Through the course of developing these projects I have gained a
+              lot of hands on experience building responsive, accessable, and
+              search engine optimized sites as well as working with a backend
+              and managing data.
             </p>
             <p>
               Here are some of the technologies I've been learning and using:

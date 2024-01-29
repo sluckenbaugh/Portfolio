@@ -9,7 +9,7 @@ const Hello = () => {
         I am a growth-minded developer currently focused on creating rich web
         experiences with React, Typescript, and Sass.
       </article>
-      <img src={design} alt="" />
+      <img src={design} alt="Web design animation" />
     </div>
   );
 };

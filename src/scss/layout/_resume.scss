@@ -1,23 +1,39 @@
 @use "../util/" as u;
 
 .resume {
+    margin: 0 1rem;
+    color: black;
+    background: #fff;
+    padding: clamp(4rem, 4rem + 2vw, 8rem);
+    box-shadow: -3px 3px 7px #dfdfdf;
+    border-radius: 0.5rem;
+    font-size: clamp(1rem, 1rem + 0.5vw, 3rem);
+}
+.resume p, h4 {
+    margin-bottom: 1rem;
+}
+.resume h4 {
+    margin-top: 1.2rem;
+}
+.resume ul {
+    list-style: circle;
+    padding-left: 3rem;
+}
+.resume li {
+    margin-bottom: 0.5rem;
+}
+.resume__container {
     display: flex;
     justify-content: center;
     margin-bottom: 6rem;
-    img {
-        width: clamp(25rem, 25rem + 15vw, 50rem);
-        border: 1.5px solid #000;
-        border-radius: 2.2rem;
-    }
-    @include u.breakpoint(large) {
-        img {
-            width: clamp(40rem, 40rem + 20vw, 100rem);
-        }
-    }
+    width: 95%;
+    margin-inline: auto;
 
-    
-}
+    @include u.breakpoint(small) {
+        width: 70%;
+    }
 .line {
+    display: none;
     width: calc(100vw - 5rem);
     border: 1.5px solid red;
     position: absolute;
@@ -26,10 +42,18 @@
     transform: rotate(5deg);
 }
 .line2 {
+    display: none;
     width: calc(100vw - 8rem);
     border: 0.5px solid red;
     position: absolute;
     margin-top: 21rem;
     z-index: -1;
     transform: rotate(-2deg);
+}
+.line, .line2 {
+    @include u.breakpoint(small) {
+        display: block;
+    }
+}
+    
 }

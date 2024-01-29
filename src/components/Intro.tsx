@@ -11,7 +11,12 @@ const Intro = () => {
           <p>I Love building beautiful, user centered websites.</p>
         </div>
       </div>
-      <img data-aos="fade-in" className="profile" src={profile} alt="" />
+      <img
+        data-aos="fade-in"
+        className="profile"
+        src={profile}
+        alt="profile picture"
+      />
     </section>
   );
 };

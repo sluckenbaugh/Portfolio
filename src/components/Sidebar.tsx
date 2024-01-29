@@ -8,24 +8,30 @@ const Sidebar = () => {
       <div className="sidebar">
         <ul>
           <li>
-            <a href="https://github.com/sluckenbaugh" target="_blank">
-              <img src={github} alt="" />
+            <a
+              href="https://github.com/sluckenbaugh"
+              aria-label="Go to Github"
+              target="_blank"
+            >
+              <img src={github} alt="Github logo" />
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/shane-luckenbaugh-ab64842a7/"
               target="_blank"
+              aria-label="Go to Linkedin"
             >
-              <img src={linkedin} alt="" />
+              <img src={linkedin} alt="Linkedin logo" />
             </a>
           </li>
           <li>
             <a
               href="https://www.instagram.com/shaneluckenbaugh/"
               target="_blank"
+              aria-label="Go to Instagram"
             >
-              <img src={insta} alt="" />
+              <img src={insta} alt="Instagram logo" />
             </a>
           </li>
           <li> </li>

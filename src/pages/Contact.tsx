@@ -17,13 +17,18 @@ const Contact = () => {
       </div>
       <div className="contact__container">
         <h2>Let's Build Together!</h2>
-        <img src={painting} alt="" />
+        <img src={painting} alt="Painting animation" />
         <p>
           Email Shane at <br />
           sluckenbaugh16@gmail.com
         </p>
-        <a target="_blank" href="mailto:sluckenbaugh16@gmail.com">
-          <button className="btn--primary btn__email">Email Shane</button>
+        <a
+          target="_blank"
+          className="btn--primary btn__email"
+          href="mailto:sluckenbaugh16@gmail.com"
+          aria-label="Email Shane"
+        >
+          Email Shane
         </a>
       </div>
       <Sidebar />
