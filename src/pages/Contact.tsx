@@ -18,10 +18,6 @@ const Contact = () => {
       <div className="contact__container">
         <h2>Let's Build Together!</h2>
         <img src={painting} alt="Painting animation" />
-        <p>
-          Email Shane at <br />
-          sluckenbaugh16@gmail.com
-        </p>
         <a
           target="_blank"
           className="btn--primary btn__email"
