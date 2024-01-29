@@ -6,7 +6,7 @@ import gallery from "../static/gallery.png";
 
 const ProjectGrid = () => {
   return (
-    <div data-aos="fade-in" className="grid__projects">
+    <div className="grid__projects">
       <ProjectCard
         pic={bobs}
         title="Bob's Burgers Fansite"

@@ -9,14 +9,20 @@
 }
 
 .grid__projects {
-    margin: 2rem 0 5rem;
+    margin: 5rem 3rem 5rem;
+    // padding: 2rem;
     display: grid;
+    gap: 2rem;
     justify-content: center;
+    @include u.breakpoint(small) {
+        margin: 2rem 8rem 5rem;
+    }
     @include u.breakpoint(medium) {
-        margin: 5rem 0 8rem;
+        margin: 5rem 0rem 8rem;
         grid-template-columns: repeat(2, 1fr);
         width: 60vw;
         margin-inline: auto;
+        gap: 3rem;
     }
 
 }

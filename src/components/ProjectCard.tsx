@@ -10,14 +10,13 @@ const ProjectCard = ({ pic, title, description, url }: Props) => {
     <div className="card">
       <div className="card__content">
         <h3 className="card__title">{title}</h3>
-        <div className="box__img">
-          <img src={pic} alt="" />
-        </div>
+
+        <img src={pic} alt="" />
         <p className="card__description">{description}</p>
+        <a href={url} target="_blank" className="btn--primary card__btn">
+          Visit
+        </a>
       </div>
-      <a href={url} target="_blank">
-        <button className="btn--primary card__btn">Visit</button>
-      </a>
     </div>
   );
 };

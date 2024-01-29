@@ -1,50 +1,51 @@
 @use '../util/' as u;
 
 .card {
+    box-sizing: border-box;
     background: rgb(23,173,255);
     background: linear-gradient(230deg, rgba(23,173,255,0.85) 0%, rgba(255,255,255,1) 33%);
-    margin: 2rem;
     position: relative;
     box-shadow: -3px 3px 7px #dfdfdf;
     padding: 3rem 6rem;
-    width: min-content;
+    width: 100%;
+    max-width: 40rem;
     border-radius: 0.4rem;
     &__content {
         display: flex;
         flex-direction: column;
         margin-bottom: 3rem;
+        height: 100%;
     }
     & img {
-        width: 15rem;
-    }
+        width: 100%;
+        margin: 2rem 0 2rem;
+        border: 1.5px solid var(--color-primary);
+        padding: 0.5rem;
+        align-self: center;
+        border-radius: 0.3rem;
+}
     &__title {
         font-size: 2rem;
         text-align: left;
     }
     &__description {
-        font-size: 1.1rem;
+        font-size: clamp(1.1rem, 1.1rem + 1vw, 4rem);
         opacity: 0.75;
         line-height: 1.4;
     }
-    & a {
-        position: absolute;
-        bottom: 2rem;
-        left: 32.5%;
-    }
-    .box__img {
-        padding: 0.7rem;
-        border-radius: 0.3rem;
-        margin: 2rem 0 2rem;
-        border: 1.8px solid var(--color-primary);
-    }
+
+
     .card__btn {
         font-size: 1.5rem;
         padding: 0.3rem 2.5rem;
-        width: 10rem;
-        margin-top: 2rem;   
+        width: 27%;
+        margin-top: 2rem;  
+        align-self: center;
+        text-align: center;
     }
     
     @include u.breakpoint(medium) {
+        max-width: none;
         img {
             width: 17.5rem;
         }
@@ -59,9 +60,7 @@
         .card__btn {
             font-size: 1.8rem;
         }
-        & a {
-            left: 36.5%;
-        }
+
     }
     @include u.breakpoint(large) {
         img {
@@ -79,9 +78,7 @@
             opacity: 0.75;
             padding-bottom: 2rem;
         }
-        & a {
-            left: 36.5%;
-        }
+
     }
     @include u.breakpoint(x-large) {
         padding: 7rem 6rem;
@@ -96,10 +93,6 @@
         }
         .card__btn {
             font-size: 2.5rem;
-        }
-        & a {
-            left: 40%;
-            bottom: 4rem;
         }
     }
 }
