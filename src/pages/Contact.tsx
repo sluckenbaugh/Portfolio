@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Sidebar from "../components/Sidebar";
 import painting from "../static/painting.gif";
+import { ToggleContext } from "../App";
+import Dropdown from "../components/Dropdown";
 
 const Contact = () => {
+  const { clicked } = useContext(ToggleContext);
   return (
     <div>
+      {clicked && <Dropdown />}
       <div className="background">
         <Nav />
         <div className="heading--center">

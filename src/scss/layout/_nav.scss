@@ -9,8 +9,8 @@
     & img {
         width: 3rem;
         border-radius: 50%;
-        margin: 1rem;
-        
+        margin: 1rem;    
+        box-shadow: 1px 1px 2px rgb(69, 69, 69);    
     }
     & a {
         color: #fff;
@@ -18,9 +18,16 @@
         font-size: 1.3rem;
         transition: border-bottom 200ms;
     }
-    .nav__links a:hover {
+    &__links {
+        display: none;
+    }
+    &__links a:hover {
         border-bottom: 1.8px solid #fff;
-        
+    }
+    @include u.breakpoint(small) {
+        &__links {
+            display: inline;
+        }
     }
     @include u.breakpoint(large) {
         & img {
@@ -30,10 +37,71 @@
             font-size: 1.7rem;
         }
     }
+    
 }
 .background {
     background: rgb(23,173,255);
     background: linear-gradient(180deg, rgba(23,173,255,0.8673056722689075) 0%, rgba(255,255,255,0.9684261204481793) 50%);
     height: 22vh;
+}
+.toggle {
+    width: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 2rem;
+}
+
+.bar1, .bar2 {
+    background: #fff;
+    margin-bottom: 0.9rem;
+    height: 1.5px;
+    width: 100%;
+    transition: all 200ms;
+    border-radius: 2px;
+    z-index: 100;
+}
+.bar1.clicked {
+    transform: rotate(43deg) translateY(0.9rem);
+    background: #000;
+}
+.bar2.clicked {
+    transform: rotate(-45deg) translate(-0.1rem, -0.7rem);
+    background: #000;
+}
+@include u.breakpoint(small) {
+    .toggle {
+        display: none;
+        width: 0;
+    }
+}
+
+.dropdown {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    background: #fff;
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    z-index: 5;
+    &__links {
+        display: grid;
+        height: 10%;
+        align-self: center;
+        font-size: 2rem;
+    }
+    @include u.breakpoint(small) {
+        display: none;
+        width: 0;
+    }
+}
+.down__link {
+    margin-bottom: 3rem;
+    color: black !important;
 }
 
