@@ -16,16 +16,15 @@
     & .profile {
         width: 15rem;
         position: absolute;
-        top: 12rem;
-        border-left: 4px dotted #fff;
-        padding: 0.6rem;
+        top: 13rem;
     }
     @include u.breakpoint(medium) {
         & .profile {
             width: 22rem;
-            right: 17vw;
+            right: 16vw;
             top: clamp(6rem, 6rem + 2vw, 15rem);
-            padding: 1.3rem;
+            padding: 1.4rem;
+            border-left: 4px dotted #fff;
         }
         .text__container {
             position: absolute;

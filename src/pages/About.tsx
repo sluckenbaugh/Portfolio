@@ -10,8 +10,8 @@ const About = () => {
   const { clicked } = useContext(ToggleContext);
   return (
     <>
-      {clicked && <Dropdown />}
       <div className="background">
+        {clicked && <Dropdown />}
         <Nav />
         <div className="heading--center">
           <h2>About Me</h2>

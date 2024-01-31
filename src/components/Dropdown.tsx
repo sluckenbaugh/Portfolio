@@ -7,9 +7,9 @@ const Dropdown = () => {
   const { clicked, setClicked } = useContext(ToggleContext);
   return (
     <div>
-      <div data-aos="fade-in" className="dropdown">
+      <div data-aos="fade-in fade-out" className="dropdown">
         <Nav />
-        <div className="dropdown__links">
+        <div data-aos="slide-up" className="dropdown__links">
           <Link
             onClick={() => setClicked(!clicked)}
             className="down__link"

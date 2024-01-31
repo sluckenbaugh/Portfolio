@@ -61,7 +61,7 @@
     width: 100%;
     transition: all 200ms;
     border-radius: 2px;
-    z-index: 100;
+    // z-index: 100;
 }
 .bar1.clicked {
     transform: rotate(43deg) translateY(0.9rem);
@@ -83,9 +83,9 @@
     gap: 3rem;
     flex-direction: column;
     background: #fff;
-    width: 100vw; 
-    height: 100vh;
-    position: absolute;
+    width: 100%; 
+    height: 100%;
+    position: fixed;
     right: 0rem;
     top: 0;
     z-index: 5;
@@ -103,5 +103,9 @@
 .down__link {
     margin-bottom: 3rem;
     color: black !important;
+    border-bottom: 1.2px solid black;
+    padding-right: 7rem;
+    padding-bottom: 0.7rem;
 }
+
 
