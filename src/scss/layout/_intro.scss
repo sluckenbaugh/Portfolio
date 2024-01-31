@@ -59,8 +59,11 @@
     margin: 0 auto;
     padding-left: 2rem;
     width: 20rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .text__container p {
-    font-weight: 100;
+    font-weight: 300;
+    @include u.breakpoint(medium) {
+        font-weight: 100;
+    }
 }
