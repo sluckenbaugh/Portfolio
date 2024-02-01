@@ -40,8 +40,8 @@ const About = () => {
             </p>
             <p>
               Through the course of developing these projects I have gained a
-              lot of hands on experience building responsive, accessable, and
-              search engine optimized sites as well as working with a backend
+              lot of hands on experience building responsive, accessible, and
+              search engine optimized sites as well as working with REST APIs
               and managing data.
             </p>
             <p>
