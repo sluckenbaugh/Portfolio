@@ -35,7 +35,7 @@ const Resume = () => {
             meaningful working relationships.
           </p>
           <h3>SKILLS</h3>
-          <p>HTML5, CSS, Sass, Javascript, React, Typescript, Git</p>
+          <p>HTML5, CSS, Sass, JavaScript, React, Typescript, Git</p>
           <h3>EXPERIENCE</h3>
           <h4>Web development</h4>
           <ul>
@@ -49,7 +49,8 @@ const Resume = () => {
             </li>
             <li>
               Experience with SQL, React Router, React Hook Form, Zustand State
-              Management, Bootstrap, Chakra UI, GitKraken, and Github
+              Management, Bootstrap, Tailwind CSS, Chakra UI, GitKraken, and
+              Github
             </li>
           </ul>
           <h4>

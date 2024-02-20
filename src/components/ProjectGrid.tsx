@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import bobs from "../static/bobs.png";
+import weather from "../static/weather.png";
 import game from "../static/game.png";
 import todo from "../static/todo.png";
 import gallery from "../static/gallery.png";
@@ -7,6 +8,12 @@ import gallery from "../static/gallery.png";
 const ProjectGrid = () => {
   return (
     <div data-aos="fade-in" className="grid__projects">
+      <ProjectCard
+        pic={weather}
+        title="WEATHER CITY"
+        description="A weather app built with React, Typescript, and Tailwind CSS. Using the fetch API the app queries the National Weather Service API. The site also features a smooth image carousel and a dark mode."
+        url="https://weather-city-woad.vercel.app/"
+      />
       <ProjectCard
         pic={bobs}
         title="BOB'S BURGERS FANSITE"
