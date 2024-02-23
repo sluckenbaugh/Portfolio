@@ -54,7 +54,7 @@ const Resume = () => {
             </li>
           </ul>
           <h4>
-            Music Teacher, Octopus Music School, Middletown, NJ — 2021-2023
+            Music Teacher, Octopus Music School, Middletown, NJ — 2021-2024
           </h4>
           <ul>
             <li>Mentored individual students across various instruments</li>
@@ -64,7 +64,7 @@ const Resume = () => {
             </li>
             <li>Rehearsed and prepared student ensembles for performances</li>
           </ul>
-          <h4>Professional Musician, Self-employed — 2014-Current</h4>
+          <h4>Professional Musician, Self-employed</h4>
           <ul>
             <li>Performed and toured with various artists around the world</li>
             <li>
