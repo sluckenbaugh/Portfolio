@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
 import { ToggleContext } from "../App";
 import Dropdown from "../components/Dropdown";
+import painting from "../static/painting.gif";
 
 const App = () => {
   const { clicked } = useContext(ToggleContext);
@@ -17,6 +18,19 @@ const App = () => {
       <Hello />
       <Projects />
       <ProjectGrid />
+      <div className="contact__container mt">
+        <h2 className="home">Let's Build Together!</h2>
+        <img src={painting} alt="Painting animation" />
+        <a
+          target="_blank"
+          className="btn--primary btn__email"
+          href="mailto:sluckenbaugh16@gmail.com"
+          aria-label="Email Shane"
+        >
+          Email Shane
+        </a>
+      </div>
+
       <Sidebar />
       <Footer />
     </div>

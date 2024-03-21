@@ -4,14 +4,18 @@
     display: grid;
     justify-items: center;
     gap: 1rem;
+    
     & h2 {
         font-size: 2rem;
+    }
+    & h2.home {
+        font-size: 3rem;
     }
     & img {
         width: 22rem;
     }
     & .btn__email {
-        padding: 0.8rem;
+        padding: 1rem 1.8rem;
         font-size: clamp(1.4rem, 1.4rem + 0.9vw, 2.2rem);
         margin-top: 1rem;
         margin-bottom: 18vh;
@@ -43,3 +47,5 @@
         }
     }
 }
+
+
