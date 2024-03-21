@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="intro__background">
         <Nav />
         <div data-aos="fade-in" className="text__container">
-          <h2>Frontend Developer.</h2>
+          <h2>Web Developer.</h2>
           <p>I Love building beautiful, user centered websites.</p>
         </div>
       </div>
